@@ -1,0 +1,534 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ankush Yadav | Data Analyst Portfolio</title>
+
+<style>
+:root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #f1f5f9;
+    --muted: #cbd5e1;
+    --accent: #38bdf8;
+}
+
+body.light {
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --text: #0f172a;
+    --muted: #475569;
+    --accent: #0369a1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    transition: background 0.3s;
+}
+
+nav {
+    background: var(--card);
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav h2 {
+    color: var(--accent);
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 8px;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0f172a, #164e63);
+    color: white;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 60px);
+    color: #38bdf8;
+}
+
+.hero h2 {
+    margin: 10px 0;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 20px auto;
+    color: #cbd5e1;
+}
+
+.btn {
+    display: inline-block;
+    background: #38bdf8;
+    color: #0f172a;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #7dd3fc;
+    transform: translateY(-3px);
+}
+
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 65px 25px;
+    scroll-margin-top: 120px;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--accent);
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: 24px;
+}
+
+.card {
+    background: var(--card);
+    padding: 28px;
+    border-radius: 14px;
+    border: 1px solid #64748b55;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.card h3 {
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: var(--muted);
+}
+
+.kpi {
+    text-align: center;
+}
+
+.kpi h2 {
+    color: var(--accent);
+    font-size: 30px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: var(--card);
+    border: 1px solid var(--accent);
+    padding: 10px 22px;
+    border-radius: 25px;
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background: var(--card);
+    padding: 30px 15px;
+    color: var(--muted);
+}
+
+@media(max-width: 600px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        padding: 65px 15px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>AY | Portfolio</h2>
+
+    <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#reports">Reports</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <button class="btn" id="themeButton"
+        onclick="changeTheme()">Light Mode</button>
+</nav>
+
+<header class="hero">
+    <h1>Ankush Yadav</h1>
+    <h2>Data Analyst | B.Tech CSE Student</h2>
+
+    <p>
+        Transforming raw data into meaningful business
+        insights through Python, SQL, Power BI,
+        Statistical Analysis and Data Visualization.
+    </p>
+
+    <a class="btn" href="#projects">Explore Projects</a>
+
+    <a class="btn"
+       href="https://github.com/ankushyadav1280"
+       target="_blank" rel="noopener">
+       GitHub Profile
+    </a>
+</header>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="card">
+        <p>
+            I am a Computer Science and Engineering
+            student at Galgotias University with an
+            interest in Data Analytics, Artificial
+            Intelligence and Software Development.
+        </p>
+
+        <br>
+
+        <p>
+            This portfolio showcases my 60-day Data
+            Analytics Internship at ApexPlanet Software
+            Pvt. Ltd., covering data cleaning, exploratory
+            analysis, business intelligence, interactive
+            dashboards and statistical validation.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Project Highlights</h2>
+
+    <div class="grid">
+        <div class="card kpi">
+            <h2>1,000</h2>
+            <p>Dataset Records</p>
+        </div>
+
+        <div class="card kpi">
+            <h2>₹13.94 Cr</h2>
+            <p>Total Sales Revenue</p>
+        </div>
+
+        <div class="card kpi">
+            <h2>5</h2>
+            <p>Internship Tasks</p>
+        </div>
+
+        <div class="card kpi">
+            <h2>0.3023</h2>
+            <p>Statistical P-Value</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Internship Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>01 | Data Cleaning</h3>
+
+            <p>
+                Data preprocessing, missing value treatment,
+                duplicate identification, data formatting
+                and data dictionary creation.
+            </p>
+
+            <a class="btn"
+            href="https://github.com/ankushyadav1280/ApexPlanet-Data-Analytics-Task-1"
+            target="_blank" rel="noopener">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>02 | EDA & Business Intelligence</h3>
+
+            <p>
+                Exploratory data analysis, SQL queries,
+                correlation analysis, business insights
+                and Excel dashboard development.
+            </p>
+
+            <a class="btn"
+            href="https://github.com/ankushyadav1280/ApexPlanet-Data-Analytics-Task-2"
+            target="_blank" rel="noopener">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>03 | Power BI Dashboard</h3>
+
+            <p>
+                Interactive dashboards, DAX calculations,
+                KPI cards, customer segmentation,
+                sales trends and interactive filters.
+            </p>
+
+            <a class="btn"
+            href="https://github.com/ankushyadav1280/ApexPlanet-Data-Analytics-Task-3"
+            target="_blank" rel="noopener">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>04 | Statistical Validation</h3>
+
+            <p>
+                Data storytelling, Welch's T-Test,
+                hypothesis testing, confidence intervals,
+                effect size and business recommendations.
+            </p>
+
+            <a class="btn"
+            href="https://github.com/ankushyadav1280/ApexPlanet-Data-Analytics-Task-4"
+            target="_blank" rel="noopener">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>05 | Capstone Portfolio</h3>
+
+            <p>
+                Integration of all internship projects
+                into a professional portfolio with
+                documentation, reports and presentations.
+            </p>
+
+            <a class="btn"
+            href="https://github.com/ankushyadav1280/AnkushYadav-DataAnalyst-Internship-Portfolio"
+            target="_blank" rel="noopener">View Portfolio</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Technical Skills</h2>
+
+    <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">Pandas</span>
+        <span class="skill">NumPy</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">Excel</span>
+        <span class="skill">DAX</span>
+        <span class="skill">Matplotlib</span>
+        <span class="skill">Seaborn</span>
+        <span class="skill">SciPy</span>
+        <span class="skill">Jupyter Notebook</span>
+        <span class="skill">Data Visualization</span>
+        <span class="skill">Hypothesis Testing</span>
+        <span class="skill">GitHub</span>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Statistical Analysis</h2>
+
+    <div class="grid">
+
+        <div class="card kpi">
+            <h2>1.031979</h2>
+            <p>T-Statistic</p>
+        </div>
+
+        <div class="card kpi">
+            <h2>0.302339</h2>
+            <p>P-Value</p>
+        </div>
+
+        <div class="card kpi">
+            <h2>0.065341</h2>
+            <p>Cohen's d</p>
+        </div>
+
+        <div class="card kpi">
+            <h2>0.05</h2>
+            <p>Significance Level</p>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="card">
+        <h3>Business Conclusion</h3>
+
+        <p>
+            The preliminary Welch's T-Test provides
+            insufficient evidence of a statistically
+            significant difference in average order value
+            between male and female customers.
+            Therefore, we fail to reject the null hypothesis.
+        </p>
+
+        <br>
+
+        <p>
+            Repeated customer orders and identifier
+            inconsistencies limit the statistical
+            interpretation. Further validation is recommended.
+        </p>
+    </div>
+</section>
+
+<section id="reports">
+    <h2 class="section-title">Reports & Presentations</h2>
+
+    <div class="grid">
+
+        <div class="card center">
+            <h3>Hypothesis Testing Report</h3>
+
+            <p>
+                Statistical methodology, results,
+                limitations and business recommendations.
+            </p>
+
+            <a class="btn"
+               href="./Task4_Hypothesis_Testing_Report.pdf"
+               target="_blank" rel="noopener">
+                View PDF
+            </a>
+        </div>
+
+        <div class="card center">
+            <h3>Final Presentation</h3>
+
+            <p>
+                Complete internship project presentation
+                including analysis and business insights.
+            </p>
+
+            <a class="btn"
+               href="./Task4_Final_Presentation.pptx"
+               download>
+                Download PPT
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Key Learnings</h2>
+
+    <div class="card">
+        <p>
+            Throughout this internship, I developed
+            practical knowledge of end-to-end data analytics,
+            data preprocessing, SQL, statistical techniques,
+            dashboard development and business intelligence.
+        </p>
+
+        <br>
+
+        <p>
+            I also learned how to communicate complex
+            analytical findings through professional
+            reports, visualizations and presentations.
+        </p>
+    </div>
+</section>
+
+<section id="contact" class="center">
+    <h2 class="section-title">Connect With Me</h2>
+
+    <p>Explore my projects and technical journey.</p>
+
+    <a class="btn"
+       href="https://github.com/ankushyadav1280"
+       target="_blank" rel="noopener">
+        GitHub
+    </a>
+</section>
+
+<footer>
+    <p>Ankush Yadav | Data Analytics Portfolio</p>
+    <p>Developed as part of ApexPlanet Internship</p>
+    <p>© <span id="year"></span> All Rights Reserved</p>
+</footer>
+
+<script>
+function changeTheme() {
+    document.body.classList.toggle("light");
+
+    const button = document.getElementById("themeButton");
+
+    button.textContent =
+        document.body.classList.contains("light")
+        ? "Dark Mode"
+        : "Light Mode";
+}
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
