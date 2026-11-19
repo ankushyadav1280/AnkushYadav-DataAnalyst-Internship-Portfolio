@@ -134,6 +134,12 @@ I also developed practical knowledge of statistical hypothesis testing, business
 - Hypothesis Testing Report
 - Final PowerPoint Presentation
 - Master Internship Portfolio
+- 
+- ## 📥 Final Project Documents
+
+- [Final PowerPoint Presentation](./Task4_Final_Presentation.pptx)
+- [Hypothesis Testing Report](./Task4_Hypothesis_Testing_Report.pdf)
+
 
 ## 🏆 Conclusion
 
